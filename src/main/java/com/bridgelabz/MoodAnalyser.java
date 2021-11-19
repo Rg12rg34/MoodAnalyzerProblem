@@ -1,17 +1,36 @@
 package com.bridgelabz;
 
 /**
- * Purpose  - I am in Any Mood” message Should Return Happy
+ * Purpose  - I am in Sad Mood” message in Constructor Should Return SAD
  * @author  - Rahul Gupta
  * @version - 16.0
  * @since   - 2021-11-09
  */
 
 public class MoodAnalyser {
-    public static String analyseMood(String message) {
+    public static String message;
+
+    // Constructor
+    public MoodAnalyser(String message) {
+        this.message = message;
+        analyseMood();
+    }
+
+    //Getter
+    public String getMessage() {
+        return message;
+    }
+
+    //Setter
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String analyseMood() {
+
         if (message.toLowerCase().contains("sad")) {
             return "Sad";
-        } else if (message.toLowerCase().contains("Any")) {
+        } else if (message.toLowerCase().contains("happy")) {
         }
         return "Happy";
     }
