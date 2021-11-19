@@ -3,16 +3,12 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-import org.junit.Test;
-import org.junit.Assert;
-
-public class MoodAnalyserTest
-{
-    // Test case to analyze sad mood of the user
+public class MoodAnalyserTest {
+    /**
+     * Rigorous Test :-)
+     */
     @Test
-    public void givenMessage_WhenProper_ShouldReturnSad() {
-        MoodAnalyser moodanalyser=new MoodAnalyser();
-        String actualResult=moodanalyser.analyseMood("User is Sad");
-        Assert.assertEquals("Sad",actualResult);
+    public void shouldAnswerWithTrue() {
+        Assert.assertTrue(true);
     }
 }
